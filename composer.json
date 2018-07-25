@@ -1,0 +1,15 @@
+{
+    "name": "submtd/laravel-uuid",
+    "description": "Adds HasUuid trait for Laravel models",
+    "authors": [
+        {
+            "name": "Steve Harmeyer",
+            "email": "harmeyersteve@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Submtd\\LaravelUuid\\": "src/"
+        }
+    }
+}
