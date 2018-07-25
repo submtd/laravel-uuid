@@ -1,6 +1,6 @@
 <?php
 
-namespace Paybetr\Traits;
+namespace Submtd\LaravelUuid;
 
 use Illuminate\Support\Str;
 
