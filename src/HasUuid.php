@@ -10,7 +10,7 @@ trait HasUuid
     public static function bootHasUuid()
     {
         self::creating(function ($model) {
-            $model->$uuid = (string)Str::uuid();
+            $model->uuid = (string)Str::uuid();
         });
     }
 
