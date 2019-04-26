@@ -10,17 +10,17 @@ trait HasUuid
     public static function bootHasUuid()
     {
         self::creating(function ($model) {
-            $model->{$model->uuidField()} = (string)Str::uuid();
+            $model->$uuid = (string)Str::uuid();
         });
     }
 
     public function scopeUuid(Builder $builder, string $uuid)
     {
-        return $builder->where($this->uuidField(), $uuid)->first();
+        return $builder->where('uuid', $uuid)->first();
     }
 
-    public function uuidField()
-    {
-        return $this->uuidField ?? config('laravel-uuid.defaultUuidField', 'uuid');
-    }
+    // public function uuidField()
+    // {
+    //     return $this->uuidField ?? config('laravel-uuid.defaultUuidField', 'uuid');
+    // }
 }
