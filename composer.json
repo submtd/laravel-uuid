@@ -7,9 +7,7 @@
             "email": "harmeyersteve@gmail.com"
         }
     ],
-    "require": {
-        "illuminate/support": "^5.6"
-    },
+    "require": {},
     "autoload": {
         "psr-4": {
             "Submtd\\LaravelUuid\\": "src/"
